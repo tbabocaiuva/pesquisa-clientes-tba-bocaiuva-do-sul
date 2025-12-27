@@ -165,9 +165,7 @@ function finalizar(){
 
 	fetch("https://script.google.com/macros/s/AKfycbwl8jv7zkRK4CHtiXJcKl4yt9_MQ_qK3QwIR5qfn8lzUPCMvAfEMEH-9hv-x0xfEFoR5g/exec", {
 	  method: "POST",
-	  headers: {
-		"Content-Type": "application/json"
-	  },
+	  mode: "no-cors",
 	  body: JSON.stringify(dados)
 	})
 	.then(res => res.text())
